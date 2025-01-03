@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#activate-menu{
+    cursor: grab;
+    background-color: whitesmoke;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30rem;
+    box-shadow: 0 0 25px grey;
+    font-size:20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+#activate-menu:hover{
+    scale: +1.2;
+}
+
+#activate-menu:active{
+    scale: -0.3;
+}
+
+header{
+    top: 0;
+    width: 100rem;
+    height: 100rem;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -2;
+    position: absolute;
+}
+.menu-container{
+    flex-direction: column;
+    transform: translate(0%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container ul{
+    background-color: whitesmoke;
+    padding: 62px;
+    box-shadow: 0 0 25px gray;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: justify;
+}
+
+.menu-container ul li{
+
+    padding: 22px;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-container ul li:nth-of-type(1):hover{
+    background-color: aquamarine;
+    box-shadow: 0 0 5px aquamarine,
+    0 0 10px aquamarine;
+}
+
+.menu-container ul li:nth-of-type(2):hover{
+    background-color: orangered;
+    box-shadow: 0 0 5px orangered,
+    0 0 10px orangered;
+}
+
+.menu-container ul li:nth-of-type(3):hover{
+    background-color: palevioletred;
+    box-shadow: 0 0 5px palevioletred,
+    0 0 10px palevioletred;
+}
+
+.menu-container ul li:nth-of-type(4):hover{
+    background-color: greenyellow;
+    box-shadow: 0 0 5px greenyellow,
+    0 0 10px greenyellow;
+}
+
+.menu-container ul li:nth-of-type(5):hover{
+    background-color: purple;
+    box-shadow: 0 0 5px purple,
+    0 0 10px purple;
+}
+
+.menu-container ul li:nth-of-type(even):hover,.menu-container ul li:nth-of-type(odd):hover{
+    width: 100%;
+}
+
+.menu-container ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu-container ul li a:hover, .menu-container ul li:hover{
+    text-decoration: none;
+}
+
+.header{
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.read{
+    z-index: 5;
+    position: fixed;
+    display: block;
+}
+
+.certicate-display{
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.picsOfcerts{
+    margin: 300px;
+    position: relative;
+    display: flex;
+}
+
+.picsOfcerts img:nth-of-type(1), .picsOfcerts img:nth-of-type(2){    
+    width: 400px;
+}
+.picsOfcerts img:nth-of-type(1){
+    margin: -200px;
+    position: absolute;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.627);
+    z-index: -2;
+}
+
+.picsOfcerts img:nth-of-type(2){
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.622);
+}
+
+#main{
+    margin: 120px;
+}
+
+.certify-text{
+    font-family: "Playwrite DE VA Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.aboutMe{
+    box-shadow: 0 0 5px grey inset;
+    width: 100%;
+    background-color: rgb(231, 228, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 300px;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.personalLinks li{
+    list-style: none;
+}
+
+.aboutMe li a{
+    color: gray;
+}
+
+
+.schoolProjects{
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cook{
+    width: 3;
+}
+
+.card{
+    margin: 30px;
+    box-shadow:  0 0 5px;
+}
+
+.choke{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-vertical{
+    flex-direction: column;
+}
+
+.push-left{
+    
+    text-align: justify;
+    display: flex;   
+}
+
+.grid-horizontal{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+@media(max-width: 1000px){
+    .grid-horizontal{
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }   
+}
