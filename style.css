@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
+
+body{
+    overflow-x: hidden;
+}
+
 
 #activate-menu{
     cursor: grab;
